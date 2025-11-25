@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #122236;
+    background-color: #122032;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
 }
@@ -38,6 +38,7 @@ body {
 .header-bar-menu nav a {
     display: block;
     text-align: center;
+    font-size: 10pt;
     padding: 5px 60px;
 }
 
@@ -48,6 +49,7 @@ body {
     text-align: center;
     width: 42px;
     height: 20px;
+    font-size: 12pt;
     background-color: #122236;
     color: #f0f0f0;
     border-radius: 10%;
@@ -116,63 +118,19 @@ footer {
         padding: 5px 5px;
     }
 
-    .header-bar a {
-        font-size: 10pt;
-    }
-}
-
-@media (min-width: 1000px) {
-    main,
-    footer {
-        justify-self: center;
-        width: 900px;
+    .header-bar-menu a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 1px;
+        height: 30%;
+        background-color: #bbbbbb;
     }
 
-    .header-bar {
-        display: grid;
-        grid-template-rows: auto auto;
-        align-items: center;
-        height: 90px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    .header-bar-menu a:first-child::before {
+        display: none;
     }
-
-    .header-bar-logo {
-        grid-row: 1;
-        justify-self: start;
-    }
-
-    .header-bar-login {
-        grid-row: 1;
-        justify-self: end;
-        font-size: 12pt;
-    }
-
-    .header-bar-menu {
-        grid-row: 1;
-        justify-self: center;
-        height: 100%;
-        align-content: center;
-    }
-
-    .header-bar-menu nav {
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        height: 100%;
-    }
-
-    .header-bar-menu nav a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        color: #bbbbbb;
-        font-size: 12pt;
-        height: 90px;
-        padding: 0px 20px;
-        transition: color 0.3s ease;
-    }
-
+    
     .header-bar-menu a:hover {
         color: #ffffff;
     }
@@ -193,17 +151,55 @@ footer {
         width: 100%;
         opacity: 1;
     }
-
-    .header-bar-menu a::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 1px;
-        height: 30%;
-        background-color: #bbbbbb;
+    
+    .header-bar-menu nav {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        height: 100%;
     }
 
-    .header-bar-menu a:first-child::before {
-        display: none;
+    .header-bar-menu nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: #bbbbbb;
+        font-size: 12pt;
+        height: 90px;
+        padding: 0px 20px;
+        transition: color 0.3s ease;
+    }
+}
+
+@media (min-width: 1000px) {
+    main,
+    footer {
+        justify-self: center;
+        width: 900px;
+    }
+
+    .header-bar {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+        height: 90px;
+    }
+
+    .header-bar-logo {
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .header-bar-login {
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .header-bar-menu {
+        grid-row: 1;
+        justify-self: center;
+        height: 100%;
+        align-content: center;
     }
 }
