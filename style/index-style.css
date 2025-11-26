@@ -19,7 +19,6 @@ body {
     align-items: center;
     background-color: #121016;
     width: 100%;
-    position: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -39,7 +38,12 @@ body {
     display: block;
     text-align: center;
     font-size: 10pt;
-    padding: 5px 60px;
+    padding: 5px 40px;
+    border-top: 1px solid #808080;
+}
+
+.header-bar-menu nav a:first-child {
+    border-top: none;
 }
 
 .header-bar-login {
@@ -54,17 +58,18 @@ body {
     color: #f0f0f0;
     border-radius: 10%;
     padding: 5px 12px;
-    margin: 30px 66px;
+    margin: 10px 10px;
 }
 
 .header-bar a {
     text-decoration: none;
-    color: #f0f0f0;
-    font-size: 10pt;
+    color: #bbbbbb;
 }
 
 main {
     padding-bottom: 100px;
+    justify-self: center;
+    width: 320px;
 }
 
 footer {
@@ -110,6 +115,11 @@ footer {
     main {
         justify-self: center;
         width: 400px;
+        padding-top: 150px;
+    }
+
+    .header-bar {
+        position: fixed;
     }
 
     .header-bar-logo {
@@ -127,11 +137,6 @@ footer {
     .header-bar-menu nav {
         display: flex;
         align-items: center;
-    }
-
-    .header-bar-menu nav a {
-        display: block;
-        text-align: center;
     }
 
     .header-bar-menu a::before {
@@ -181,17 +186,37 @@ footer {
         align-items: center;
         position: relative;
         color: #bbbbbb;
+        text-align: center;
+        border-top: none;
         font-size: 9pt;
         height: 90px;
-        padding: 0px 20px;
+        padding: 0px 10px;
         transition: color 0.3s ease;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 440px) {
+    .header-bar-menu nav a {
+        font-size: 10pt;
+    }
+}
+
+@media (min-width: 480px) {
+    .header-bar-menu nav a {
+        font-size: 11pt;
+    }
+}
+
+@media (min-width: 520px) {
+    .header-bar-menu nav a {
+        font-size: 12pt;
+    }
+}
+
+@media (min-width: 900px) {
     main {
         justify-self: center;
-        width: 900px;
+        width: 900px; /*960p*/
         padding-top: 90px;
     }
 
