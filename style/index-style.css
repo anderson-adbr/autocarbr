@@ -75,6 +75,7 @@ main {
 footer {
     background-color: #000000;
     bottom: 0;
+    padding: 20px;
 }
 
 .main-banner {
@@ -120,18 +121,6 @@ footer {
 
     .header-bar {
         position: fixed;
-    }
-
-    .header-bar-logo {
-
-    }
-
-    .header-bar-login {
-        margin: 21px 66px;
-    }
-
-    .header-bar-menu {
-
     }
 
     .header-bar-menu nav {
@@ -216,7 +205,7 @@ footer {
 @media (min-width: 900px) {
     main {
         justify-self: center;
-        width: 900px; /*960p*/
+        width: 800px; /*960p*/
         padding-top: 90px;
     }
 
@@ -227,22 +216,9 @@ footer {
         height: 90px;
     }
 
-/*    .header-bar-logo {
-        grid-row: 1;
-        justify-self: center;
-        margin-right: 200px;
-    }
-
-    .header-bar-login {
-        grid-row: 1;
-        justify-self: center;
-        margin-left: 200px;
-    } */
-
     .header-bar-menu {
         grid-row: 1;
         justify-self: center;
         align-content: center;
-        height: 100%;
     }
 }
