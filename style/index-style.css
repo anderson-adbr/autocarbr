@@ -116,13 +116,12 @@ footer {
     main {
         justify-self: center;
         width: 400px;
-        padding-top: 130px;
     }
 
     .header-bar {
-        position: fixed;
+        position: relative;
     }
-
+    
     .header-bar-menu nav {
         display: flex;
         align-items: center;
@@ -184,6 +183,16 @@ footer {
     }
 }
 
+@media (min-width: 400px) and (min-height: 500px) {
+    main {
+        padding-top: 130px;
+    }
+
+    .header-bar {
+        position: fixed;
+    }
+}
+
 @media (min-width: 440px) {
     .header-bar-menu nav a {
         font-size: 10pt;
@@ -205,7 +214,7 @@ footer {
 @media (min-width: 900px) {
     main {
         justify-self: center;
-        width: 800px; /*960p*/
+        width: 800px;
         padding-top: 90px;
     }
 
