@@ -212,7 +212,7 @@ footer {
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 840px) {
     main {
         justify-self: center;
         width: 800px;
