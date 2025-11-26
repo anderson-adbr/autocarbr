@@ -116,7 +116,7 @@ footer {
     main {
         justify-self: center;
         width: 400px;
-        padding-top: 150px;
+        padding-top: 130px;
     }
 
     .header-bar {
@@ -166,7 +166,7 @@ footer {
         display: flex;
         justify-content: center;
         align-self: center;
-        height: 60px;
+        height: 40px;
     }
 
     .header-bar-menu nav a {
@@ -178,7 +178,7 @@ footer {
         text-align: center;
         border-top: none;
         font-size: 9pt;
-        height: 90px;
+        height: 40px;
         padding: 0px 10px;
         transition: color 0.3s ease;
     }
@@ -220,5 +220,9 @@ footer {
         grid-row: 1;
         justify-self: center;
         align-content: center;
+    }
+
+    .header-bar-menu nav a {
+        height: 90px;
     }
 }
