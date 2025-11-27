@@ -51,20 +51,25 @@ body {
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
+    justify-items: center;
     text-align: center;
     width: 42px;
     height: 20px;
     font-size: 12pt;
-    background-color: #122236;
-    color: #f0f0f0;
+    background-color: #be3939;
     border-radius: 10%;
     padding: 5px 12px;
     margin: 10px 10px;
 }
 
-.header-bar a {
+.header-bar-menu a {
     text-decoration: none;
     color: #bbbbbb;
+}
+
+.header-bar-login a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 main {
