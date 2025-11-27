@@ -113,6 +113,14 @@ footer {
     background-color: #000000;
 }
 
+.header-bar-menu nav a.active {
+    color: #be3939;
+}
+
+.header-bar-menu a.active:hover {
+    color: #ff0000;
+}
+
 @media (min-width: 400px) {
     main {
         justify-self: center;
