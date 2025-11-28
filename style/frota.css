@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+main {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 main a {
     color: #cacaca;
     text-decoration: none;
@@ -9,19 +15,19 @@ main a:hover {
     color: #ffffff;
 }
 
-.main-selection, .sec-selection {
+.first-selection, .sec-selection {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: 14pt;
+    font-size: 11pt;
 }
 
-.left-selection, .right-selection {
+.car-icon-selection, .map-icon-selection {
     display: flex;
     text-align: center;
     padding: 10px;
     background-color: #00000050;
-    border: 2px  solid #6b0303;
+    border: 2px  solid #990000;
     border-radius: 10px;
 }
 
@@ -29,14 +35,14 @@ main a:hover {
     display: block;
     align-items: center;
     justify-content: center;
-    width: 500px;
+    width: 300px;
     padding: 20px;
     background-color: #00000050;
     border-radius: 10px;
 }
 
 input[type="text"] {
-    width: 400px;
+    width: 220px;
     padding: 10px 20px;
     margin: 10px 0;
     background-color: #000000;
