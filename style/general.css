@@ -10,22 +10,22 @@ body {
     background-color: #122032;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
+    width: 100%;
 }
 
 .header-bar {
     display: grid;
-    background-color: #121016;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-    align-items: center;
-    background-color: #121016;
     width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #121016;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Arial, Helvetica, sans-serif;
 }
 
 .header-bar-logo {
     grid-column: 1;
     grid-row: 1;
+    justify-self: start;
     padding: 9px;
 }
 
@@ -35,41 +35,44 @@ body {
     justify-self: center;
 }
 
+.header-bar-login {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    padding: 10px;
+}
+
 .header-bar-menu nav a {
     display: block;
     text-align: center;
     font-size: 10pt;
     padding: 5px 40px;
     border-top: 1px solid #808080;
+    text-decoration: none;
+    color: #bbbbbb;
 }
 
 .header-bar-menu nav a:first-child {
     border-top: none;
 }
 
-.header-bar-login {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    justify-items: center;
-    text-align: center;
-    width: 42px;
-    height: 20px;
-    font-size: 12pt;
-    background-color: #be3939;
-    border-radius: 10%;
-    padding: 5px 12px;
-    margin: 10px 10px;
+.header-bar-menu nav a.active {
+    color: #be3939;
 }
 
-.header-bar-menu a {
-    text-decoration: none;
-    color: #bbbbbb;
+.header-bar-menu a.active:hover {
+    color: #ff0000;
 }
 
-.header-bar-login a {
+.header-bar-login nav a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: #ffffff;
+    font-size: 10pt;
+    background-color: #cc0000;
+    padding: 5px;
+    border-radius: 10%;
 }
 
 main {
@@ -82,48 +85,6 @@ footer {
     background-color: #000000;
     bottom: 0;
     padding: 20px;
-}
-
-.main-banner {
-    display: block;
-    width: 100%;
-    height: 300px;
-    background-color: #000000;
-}
-
-.central-banner {
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    background-color: #000000;
-}
-
-.last-news h2,
-.last-updates h2 {
-    height: 40px;
-    padding: 10px;
-    align-content: end;
-    color: #acacac;
-    font-size: 1em;
-}
-
-.news-banner,
-.updates-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 200px;
-    background-color: #000000;
-}
-
-.header-bar-menu nav a.active {
-    color: #be3939;
-}
-
-.header-bar-menu a.active:hover {
-    color: #ff0000;
 }
 
 @media (min-width: 400px) {
