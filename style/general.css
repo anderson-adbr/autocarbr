@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    scrollbar-width: none;
+    scrollbar-width: thin;
+    scrollbar-color: #122032 #121016;
 }
 
 body {
