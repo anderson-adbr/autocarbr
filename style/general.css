@@ -76,6 +76,14 @@ body {
     border-radius: 10%;
 }
 
+.header-bar-login nav a:hover {
+    background-color: #ff0000;
+}
+
+.header-bar-logo:hover {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(99%) saturate(7499%) hue-rotate(357deg) brightness(89%) contrast(128%);
+}
+
 main {
     padding-bottom: 100px;
     justify-self: center;
