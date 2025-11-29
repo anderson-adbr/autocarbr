@@ -1,9 +1,8 @@
 @charset "UTF-8";
 
-main {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+.start {
+    padding: 10px;
+    background-color: #00000050;
 }
 
 main a {
@@ -15,11 +14,16 @@ main a:hover {
     color: #ffffff;
 }
 
-.first-selection, .sec-selection {
+.first-selection {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 11pt;
+}
+
+.sec-selection {
+    display: block;
+    justify-items: center;
 }
 
 .car-icon-selection, .map-icon-selection {
@@ -27,28 +31,29 @@ main a:hover {
     text-align: center;
     padding: 10px;
     background-color: #00000050;
-    border: 2px  solid #990000;
+    border: 2px  solid #880000;
     border-radius: 10px;
 }
 
 .car-selection, .city-selection {
     display: block;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
+    text-align: center;
     width: 300px;
-    padding: 20px;
     background-color: #00000050;
     border-radius: 10px;
+    padding: 20px 0px;
 }
 
 input[type="text"] {
     width: 220px;
     padding: 10px 20px;
-    margin: 10px 0;
     background-color: #000000;
     color: #cfcfcf;
-    border: 1px solid #6b0303;
+    border: 1px solid #880000;
     border-radius: 4px;
+    margin: 5px;
 }
 
 input::placeholder {
@@ -56,11 +61,12 @@ input::placeholder {
 }
 
 input[type="text"]:focus {
-    border-color: #cc0000;
+    border-color: #ff0000;
     outline: none;
 }
 
 button {
-    background-color: #6b0303;
+    background-color: #880000;
     color: #cacaca;
+    padding: 5px;
 }

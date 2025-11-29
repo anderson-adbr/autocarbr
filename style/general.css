@@ -4,14 +4,14 @@
     margin: 0;
     padding: 0;
     scrollbar-width: thin;
-    scrollbar-color: #122032 #121016;
+    scrollbar-color: #102030 #080810;
 }
 
 body {
-    background-color: #122032;
+    width: 100%;
+    background-color: #102030;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    width: 100%;
 }
 
 .header-bar {
@@ -19,7 +19,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     width: 100%;
-    background-color: #121016;
+    background-color: #080810;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Arial, Helvetica, sans-serif;
 }
 
@@ -48,9 +48,9 @@ body {
     text-align: center;
     font-size: 10pt;
     padding: 5px 40px;
-    border-top: 1px solid #808080;
+    border-top: 1px solid #999999;
     text-decoration: none;
-    color: #bbbbbb;
+    color: #999999;
 }
 
 .header-bar-menu nav a:first-child {
@@ -58,7 +58,7 @@ body {
 }
 
 .header-bar-menu nav a.active {
-    color: #be3939;
+    color: #cc4040;
 }
 
 .header-bar-menu a.active:hover {
@@ -69,9 +69,9 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color: #ffffff;
     font-size: 10pt;
     background-color: #cc0000;
+    color: #ffffff;
     padding: 5px;
     border-radius: 10%;
 }
@@ -157,7 +157,6 @@ footer {
         justify-content: center;
         align-items: center;
         position: relative;
-        color: #bbbbbb;
         text-align: center;
         border-top: none;
         font-size: 9pt;
@@ -205,7 +204,6 @@ footer {
     .header-bar {
         display: grid;
         grid-template-rows: auto auto;
-        align-items: center;
         height: 90px;
     }
 
