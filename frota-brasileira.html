@@ -32,32 +32,34 @@
         </div>
     </header>
     <main>
-        <div class="first-selection">
-            <div class="car-icon-selection">
-                <a href="#"><img src="img/car-icon.png" alt="Seleção de marcas"><p>Pesquisar por<br>marca e modelo</p></a>
+        <div class="search-container">
+            <div class="first-selection">
+                <button>
+                    <p>Marca/Modelo</p>
+                </button>
+                <button>
+                    <p>Estado/Cidade</p>
+                </button>
             </div>
-            <div class="map-icon-selection">
-                <a href="#"><img src="img/map-icon.png" alt="Seleção de estados"><p>Pesquisar por<br>estado e cidade</p></a>
-            </div>
-        </div>
-        <div class="sec-selection">
-            <div class="car-selection">
-                <div>
-                    <input autocomplete="Off" type="text" placeholder="Pesquise pela marca" aria-label="Pesquise pela marca">
+            <div class="sec-selection">
+                <div class="car-selection">
+                    <div>
+                        <input autocomplete="Off" type="text" placeholder="Pesquise pela marca" aria-label="Pesquise pela marca">
+                    </div>
+                    <div>
+                        <input autocomplete="Off" type="text" placeholder="Pesquise pelo modelo" aria-label="Pesquise pelo modelo">
+                    </div>
+                    <button>Avançar</button>
                 </div>
-                <div>
-                    <input autocomplete="Off" type="text" placeholder="Pesquise pelo modelo" aria-label="Pesquise pelo modelo">
+                <div class="city-selection">
+                    <div>
+                        <input autocomplete="Off" type="text" placeholder="Pesquise pelo estado" aria-label="Pesquise pelo estado">
+                    </div>
+                    <div>
+                        <input autocomplete="Off" type="text" placeholder="Pesquise pela cidade" aria-label="Pesquise pela cidade">
+                    </div>
+                    <button>Avançar</button>
                 </div>
-                <button>Avançar</button>
-            </div>
-            <div class="city-selection">
-                <div>
-                    <input autocomplete="Off" type="text" placeholder="Pesquise pelo estado" aria-label="Pesquise pelo estado">
-                </div>
-                <div>
-                    <input autocomplete="Off" type="text" placeholder="Pesquise pela cidade" aria-label="Pesquise pela cidade">
-                </div>
-                <button>Avançar</button>
             </div>
         </div>
     </main>
