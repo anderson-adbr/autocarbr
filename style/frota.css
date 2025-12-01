@@ -10,40 +10,13 @@ main a {
     text-decoration: none;
 }
 
+.search-container {
+    display: grid;
+    al
+}
+
 main a:hover {
     color: #ffffff;
-}
-
-.first-selection {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 11pt;
-}
-
-.sec-selection {
-    display: block;
-    justify-items: center;
-}
-
-.car-icon-selection, .map-icon-selection {
-    display: flex;
-    text-align: center;
-    padding: 10px;
-    background-color: #00000050;
-    border: 2px  solid #880000;
-    border-radius: 10px;
-}
-
-.car-selection, .city-selection {
-    display: block;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    width: 300px;
-    background-color: #00000050;
-    border-radius: 10px;
-    padding: 20px 0px;
 }
 
 input[type="text"] {
@@ -63,10 +36,4 @@ input::placeholder {
 input[type="text"]:focus {
     border-color: #ff0000;
     outline: none;
-}
-
-button {
-    background-color: #880000;
-    color: #cacaca;
-    padding: 5px;
 }
