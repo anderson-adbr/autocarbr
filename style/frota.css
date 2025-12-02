@@ -15,10 +15,6 @@ main a {
     al
 }
 
-main a:hover {
-    color: #ffffff;
-}
-
 input[type="text"] {
     width: 220px;
     padding: 10px 20px;
