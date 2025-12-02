@@ -10,7 +10,6 @@
 </head>
 <body>
     <header>
-    <header>
         <nav id="header-logo">
             <a href="index.html" class="header-logo">
                 <img id="logo" src="img/autocarbr-logo-68.png" alt="Logotipo do site AutoCarBr">
@@ -27,41 +26,64 @@
         </nav>
     </header>
     <main>
-        <div class="search-container">
-            <div class="first-selection">
+        <div id="search-container">
+            <div id="search-type">
                 <button>
-                    <p>Marca/Modelo</p>
+                    <p>Pesquisa por Veículo</p>
                 </button>
                 <button>
-                    <p>Estado/Cidade</p>
+                    <p>Pesquisa por Local</p>
                 </button>
             </div>
-            <div class="sec-selection">
-                <div class="car-selection">
-                    <div>
-                        <input autocomplete="Off" type="text" placeholder="Pesquise pela marca" aria-label="Pesquise pela marca">
-                    </div>
-                    <div>
-                        <input autocomplete="Off" type="text" placeholder="Pesquise pelo modelo" aria-label="Pesquise pelo modelo">
-                    </div>
+            <div id="car-selection">
+                <div>
+                    <label for="brand-selection">Selecione uma marca: </label>
+                    <input list="cars-brand" name="brand-selection" id="brand-selection">
                 </div>
-                <div class="city-selection">
-                    <div>
-                        <input autocomplete="Off" type="text" placeholder="Pesquise pelo estado" aria-label="Pesquise pelo estado">
-                    </div>
-                    <div>
-                        <input autocomplete="Off" type="text" placeholder="Pesquise pela cidade" aria-label="Pesquise pela cidade">
-                    </div>
+                <div>
+                    <label for="model-selection">Selecione um modelo: </label>
+                    <input list="cars-model" name="model-selection" id="model-selection">
                 </div>
-                <button>Avançar</button>
+                <datalist id="cars-brand">
+                    <option value="Audi">
+                    <option value="BMW">
+                    <option value="Chevrolet">
+                    <option value="Fiat">
+                    <option value="Ford">
+                </datalist>
             </div>
+            <div id="local-selection">
+                <div>
+                    <label for="estate-selection">Selecione um estado: </label>
+                    <input list="estates" name="estate-selection" id="estate-selection">
+                </div>
+                <div>
+                    <label for="model-selection">Selecione uma cidade: </label>
+                    <input list="cars-model" name="model-selection" id="model-selection">
+                </div>
+                <datalist id="estates">
+                    <option value="Amazonas">
+                    <option value="Amapá">
+                    <option value="São Paulo">
+                    <option value="Minas Gerais">
+                    <option value="Rio de Janeiro">
+                </datalist>
+            </div>
+            <button id="show-table">
+            <a href="marca-modelo.html">Avançar</a>
+            </button>
         </div>
+        <article>
+            <h1>Sobre a ferramenta Frota Brasileira</h1>
+            <p>A ferramenta tem por objetivo exibir a curiosidade...</p>
+        </article>
     </main>
     <footer>
         <h3>Sobre Nós</h3>
         <p>O AutoCarBr foi criado por quem ama carros para os apaixonados por eles.</p>
     </footer>
 <!--
+
     <script>
         function clickMenu() {
             if (itens.style.display == 'block') {
@@ -71,6 +93,23 @@
             }
         }
     </script>
+
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                </form>
+
+                <form id="car-selection">
+                    <input autocomplete="Off" type="text" placeholder="Pesquise pela marca" aria-label="Pesquise pela marca">
+                    <input autocomplete="Off" type="text" placeholder="Pesquise pelo modelo" aria-label="Pesquise pelo modelo">
+                </form>
+                <form id="city-selection">
+                    <input autocomplete="Off" type="text" placeholder="Pesquise pelo estado" aria-label="Pesquise pelo estado">
+                    <input autocomplete="Off" type="text" placeholder="Pesquise pela cidade" aria-label="Pesquise pela cidade">
+                </form>
+
 -->
 </body>
 </html>

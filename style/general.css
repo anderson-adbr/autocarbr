@@ -1,17 +1,15 @@
 @charset "UTF-8";
 
 * {
-    margin: 0;
-    padding: 0;
     scrollbar-width: thin;
     scrollbar-color: #102030 #080810;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     width: 100%;
     background-color: #102030;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
 }
 
 header {
@@ -21,6 +19,22 @@ header {
     width: 100%;
     background-color: #080810;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Arial, Helvetica, sans-serif;
+}
+
+main {
+    width: 320px;
+    min-height: 100vh;
+    justify-self: center;
+    background-color: #00000050;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
 }
 
 #header-logo {
@@ -84,28 +98,16 @@ header {
     filter: brightness(0) saturate(100%) invert(16%) sepia(99%) saturate(7499%) hue-rotate(357deg) brightness(89%) contrast(128%);
 }
 
-main {
-    padding-bottom: 100px;
-    justify-self: center;
-    width: 320px;
-}
-
-footer {
-    display: block;
-    background-color: #000000;
-    padding: 20px;
-}
-
 @media (min-width: 400px) {
+    header {
+        position: relative;
+    }
+    
     main {
         justify-self: center;
         width: 400px;
     }
 
-    header {
-        position: relative;
-    }
-    
     #header-menu {
         display: flex;
         align-items: center;
@@ -167,12 +169,12 @@ footer {
 }
 
 @media (min-width: 400px) and (min-height: 500px) {
-    main {
-        padding-top: 130px;
-    }
-
     header {
         position: fixed;
+    }
+
+    main {
+        padding-top: 130px;
     }
 }
 
@@ -195,16 +197,16 @@ footer {
 }
 
 @media (min-width: 840px) {
-    main {
-        justify-self: center;
-        width: 800px;
-        padding-top: 90px;
-    }
-
     header {
         display: grid;
         grid-template-rows: auto auto;
         height: 90px;
+    }
+
+    main {
+        justify-self: center;
+        width: 800px;
+        padding-top: 90px;
     }
 
     #header-menu {
