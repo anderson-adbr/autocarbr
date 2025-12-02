@@ -6,13 +6,21 @@
 
 #search-type button {
     background-color: #00000000;
-    color: #ffffff;
     border-top: none;
     border-right: none;
     border-left: none;
     border-bottom: 1px solid #ffffff;
     height: 30px;
     margin: 5px;
+}
+
+#search-type button a {
+    text-decoration: none;
+    color: #cccccc;
+}
+
+#search-type button a:hover {
+    color: #ffffff;
 }
 
 label {
