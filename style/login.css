@@ -45,6 +45,10 @@ section#login-container > h1 {
     padding: 20px 0px;
 }
 
+section#login-container > p {
+    padding: 0px 10px;
+}
+
 section#login-container > form {
     display: block;
     margin: 0px 20px;
