@@ -99,7 +99,12 @@ footer {
     filter: brightness(0) saturate(100%) invert(16%) sepia(99%) saturate(7499%) hue-rotate(357deg) brightness(89%) contrast(128%);
 }
 
-@media (min-width: 400px) {
+/*
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+*/
+
+@media (min-width: 400px) { /*max-width*/
     header {
         position: relative;
     }

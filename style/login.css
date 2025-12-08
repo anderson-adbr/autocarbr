@@ -1,1 +1,126 @@
 @charset "UTF-8";
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #102030 #080810;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: #102030 url(../img/login-background3.jpg) no-repeat;
+    background-position: center;
+}
+
+header {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #000000c2, #00000081, #00000000);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-self: center;
+}
+
+section#login-container {
+    display: block;
+    text-align: center;
+    max-width: 320px;
+    background-color: #ffffff13;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid #ffffff44;
+    box-shadow: 0px 0px 15px 4px #000000;
+    color: #ffffff;
+}
+
+section#login-container > h1 {
+    font-size: 18pt;
+    padding: 20px 0px;
+}
+
+section#login-container > form {
+    display: block;
+    margin: 0px 20px;
+    text-align: left;
+}
+
+.form-box {
+    padding-top: 10px;
+}
+
+div.form-box > label {
+    font-size: 10pt;
+    color: #dfdfdf;
+}
+
+div.form-box > input {
+    padding: 0px 10px;
+    width: 280px;
+    height: 30px;
+    background-color: #080810;
+    border: 1px solid #aa0000;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+#password-recovery {
+    margin: 10px 0px 20px 0px;
+}
+
+#password-recovery > a {
+    color: #4242ff;
+}
+
+input[type=submit] {
+    width: 280px;
+    height: 40px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 12pt;
+    color: #ffffff;
+}
+
+section#login-container > hr {
+    border: none;
+    margin: 20px;
+    height: 1px;
+    background-color: #102030;
+}
+
+#register-button {
+    display: flex;
+    justify-self: center;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    background-color: #aa0000;
+    border-radius: 5px;
+}
+
+div#register-button > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 12pt;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 112px;
+    background-image: linear-gradient(to top, #000000c2, #00000081, #00000000);
+}
