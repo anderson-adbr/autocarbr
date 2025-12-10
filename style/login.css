@@ -13,7 +13,7 @@ body {
     display: block;
     width: 100vw;
     height: 100vh;
-    background: #102030 /*url(../img/login-background3.jpg) no-repeat*/;
+    background-color: #102030;
     background-position: center;
 }
 
@@ -130,3 +130,11 @@ footer {
     background-image: linear-gradient(to top, #000000c2, #00000081, #00000000);
 }
 */
+
+@media screen and (min-width: 360px) {
+    body {
+        background: #102030 url(../img/login-background2.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
