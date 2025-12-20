@@ -31,7 +31,7 @@ main {
 section#login-container {
     display: block;
     text-align: center;
-    max-width: 320px;
+    max-width: 320px; 
     background-color: #10203050;
     backdrop-filter: blur(10px);
     border-radius: 20px;

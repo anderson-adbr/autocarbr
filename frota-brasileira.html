@@ -26,53 +26,51 @@
         </nav>
     </header>
     <main>
-        <div id="search-container">
+        <section id="search-container">
             <div id="search-type">
-                <button>
-                    <a href="#">Pesquisa por veículo</a>
+                <button id="car-search">Pesquisa por veículo</button>
+                <button id="local-search">Pesquisa por local</button>
+            </div>
+            <form action="frota-search.php" method="post" autocomplete="on">
+                <div id="car-selection">
+                    <div class="selection">
+                        <label for="brand-selection">Selecione uma marca: </label>
+                        <input list="cars-brand" name="brand-selection" id="brand-selection">
+                    </div>
+                    <div class="selection">
+                        <label for="model-selection">Selecione um modelo: </label>
+                        <input list="cars-model" name="model-selection" id="model-selection">
+                    </div>
+                    <datalist id="cars-brand">
+                        <option value="Audi">
+                        <option value="BMW">
+                        <option value="Chevrolet">
+                        <option value="Fiat">
+                        <option value="Ford">
+                    </datalist>
+                </div>
+                <div id="local-selection">
+                    <div>
+                        <label for="estate-selection">Selecione um estado: </label>
+                        <input list="estates" name="estate-selection" id="estate-selection">
+                    </div>
+                    <div>
+                        <label for="city-selection">Selecione uma cidade: </label>
+                        <input list="cities" name="city-selection" id="city-selection">
+                    </div>
+                    <datalist id="estates">
+                        <option value="Amazonas">
+                        <option value="Amapá">
+                        <option value="São Paulo">
+                        <option value="Minas Gerais">
+                        <option value="Rio de Janeiro">
+                    </datalist>
+                </div>
+                <button id="show-table">
+                    <a href="marca-modelo.html">Avançar</a>
                 </button>
-                <button>
-                    <a href="#">Pesquisa por local</a>
-                </button>
-            </div>
-            <div id="car-selection">
-                <div>
-                    <label for="brand-selection">Selecione uma marca: </label>
-                    <input list="cars-brand" name="brand-selection" id="brand-selection">
-                </div>
-                <div>
-                    <label for="model-selection">Selecione um modelo: </label>
-                    <input list="cars-model" name="model-selection" id="model-selection">
-                </div>
-                <datalist id="cars-brand">
-                    <option value="Audi">
-                    <option value="BMW">
-                    <option value="Chevrolet">
-                    <option value="Fiat">
-                    <option value="Ford">
-                </datalist>
-            </div>
-            <div id="local-selection">
-                <div>
-                    <label for="estate-selection">Selecione um estado: </label>
-                    <input list="estates" name="estate-selection" id="estate-selection">
-                </div>
-                <div>
-                    <label for="model-selection">Selecione uma cidade: </label>
-                    <input list="cars-model" name="model-selection" id="model-selection">
-                </div>
-                <datalist id="estates">
-                    <option value="Amazonas">
-                    <option value="Amapá">
-                    <option value="São Paulo">
-                    <option value="Minas Gerais">
-                    <option value="Rio de Janeiro">
-                </datalist>
-            </div>
-            <button id="show-table">
-            <a href="marca-modelo.html">Avançar</a>
-            </button>
-        </div>
+            </form>
+        </section>
         <article>
             <h1>Sobre a ferramenta Frota Brasileira</h1>
             <p>A ferramenta tem por objetivo exibir a curiosidade...</p>
